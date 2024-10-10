@@ -28,7 +28,7 @@ const instructorNavItem = [
    
     { to: "/dashboard/my-Packages", icon: <IoSchoolSharp className="text-2xl" />, label: "My Packages" },
     // { to: "/dashboard/my-pending", icon: <MdPendingActions className="text-2xl" />, label: "Pending Packages" },
-    // { to: "/dashboard/my-approved", icon: <IoMdDoneAll className="text-2xl" />, label: "Approved Packages" },
+    // { to: "/dashboard/my-approved" icon: <IoMdDoneAll className="text-2xl" />, label: "Approved Packages" },
 ];
 
 const student = [
