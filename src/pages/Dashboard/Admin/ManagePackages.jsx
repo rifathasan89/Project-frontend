@@ -104,7 +104,8 @@ const ManagePackages = () => {
                                     <thead className="border-b font-medium dark:border-neutral-500">
                                         <tr>
                                             <th scope="col" className="px-6 py-4">PHOTO</th>
-                                            <th scope="col" className="px-6 py-4">COURSE NAME</th>
+                                            <th scope="col" className="px-6 py-4">PACKAGE NAME</th>
+                                            <th scope="col" className="px-6 py-4">TOTAL ENROLL</th>
                                             <th scope="col" className="px-6 py-4">INSTRUCTOR NAME</th>
                                             <th scope="col" className="px-6 py-4">STATUS</th>
                                             <th scope="col" className="px-6 py-4">ACTIONS</th>
@@ -126,7 +127,10 @@ const ManagePackages = () => {
                                                             <img src={Pac.image} className='h-[35px] w-[35px]' alt="" />
                                                         </td>
                                                         <td className="whitespace-pre-wrap px-6 py-4">{Pac.name}</td>
+                                                        <td className="whitespace-pre-wrap px-6 py-4">{Pac.totalEnrolled ? Pac.totalEnrolled : 0}</td>
                                                         <td className="whitespace-nowrap px-6 py-4">{Pac.instructorName}</td>
+
+
                                                         <td className="whitespace-nowrap px-6 py-4">
                                                             <span className={`font-bold ${Pac.status === 'pending' ? 'bg-orange-400' : Pac.status === 'checking' ? 'bg-yellow-500' : Pac.status === 'approved' ? 'bg-green-600' : 'bg-red-600'} px-2 py-1 uppercase text-white rounded-xl`}>
                                                                 {Pac.status}
